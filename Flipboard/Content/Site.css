@@ -1,0 +1,105 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+[class^="fa-"] {
+    font-size: 28px;
+    vertical-align: -6px;
+}
+
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+    .metro .tile {
+      width: 240px;
+      height: 240px;
+      margin: 0 10px 10px 0;
+    }
+    .metro .tile.double {
+      width: 510px;
+    }
+    .metro .tile.double-vertical {
+      height: 510px;
+    }
+    .metro .tile.onehalf {
+      width: 375px;
+    }
+    .metro .tile.onehalf-vertical {
+      height: 375px;
+    }
+    .metro .tile.triple {
+      width: 780px;
+    }
+    .metro .tile.triple-vertical {
+      height: 780px;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+    .metro .tile {
+      width: 225px;
+      height: 225px;
+      margin: 0 10px 10px 0;
+    }
+    .metro .tile.double {
+      width: 460px;
+    }
+    .metro .tile.double-vertical {
+      height: 460px;
+    }
+    .metro .tile.onehalf {
+      width: 470px;
+    }
+    .metro .tile.onehalf-vertical {
+      height: 338px;
+    }
+    .metro .tile.triple {
+      width: 675px;
+    }
+    .metro .tile.triple-vertical {
+      height: 675px;
+    }
+    .metro .tile.selected, .metro .tile {
+        border: 8px #4390df solid;
+    }
+}

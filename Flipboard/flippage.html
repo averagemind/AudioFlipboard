@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Experimental Page Layout Inspired by Flipboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Experimental Page Layout Inspired by Flipboard" />
+    <meta name="keywords" content="flip, pages, flipboard, layout, responsive, web, web design, grid, ipad, jquery, css3, 3d, perspective, transitions, transform" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/content/flippage/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/content/flippage/style.css" />
+    <script type="text/javascript" src="/scripts/flippage/modernizr.custom.08464.js"></script>
+    <script id="pageTmpl" type="text/x-jquery-tmpl">
+        <div class="${theClass}" style="${theStyle}">
+            <div class="front">
+                <div class="outer">
+                    <div class="content" style="${theContentStyleFront}">
+                        <div class="inner">{{html theContentFront}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="outer">
+                    <div class="content" style="${theContentStyleBack}">
+                        <div class="inner">{{html theContentBack}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+</head>
+<body>
+
+    <header class="main-title">
+        <h1>Do-it-yourself Investment Portfolios</h1>
+        <p>Swipe or drag to flip the pages, click to open items</p>
+        <p style="padding-top:5em;"><strong>Best viewed in a Webkit browsers (Safari, Chrome)</strong></p>
+    </header>
+
+    <div id="flip" class="container">
+
+        <div class="f-page f-cover">
+            <div class="f-cover-flip">&lt; Flip</div>
+        </div>
+
+        <div id="page1" class="f-page">
+            <div class="f-title">
+                <a href="#"></a>
+                <h2>BTS Innovation Day, April 3, 2014</h2>
+                <a href="#"></a>
+            </div>
+            <div class="box w-25 h-70">
+                <h3 data-tts>BTS Innovation: Audio Report</h3>
+                <p data-tts>
+                    Innovation is the application of better solutions that meet new requirements, unarticulated needs, or existing market needs.
+                </p>
+                <p data-tts>
+                    Innovation differs from improvement
+                    in that innovation refers to the notion of doing something different rather than doing the same thing better.
+                </p>
+                <p data-tts>
+                    The audio reports are an effective, portable, convenient and intimate way to deliver contents to advisors and their clients.
+                </p>
+            </div>
+            <div class="box w-50 h-70 box-b-l box-b-r">
+                <h3 data-tts>Balanced Portfolio Reports and Summaries</h3>
+                <p data-tts>
+                    Our ETF Portfolio has been designed for tax-free (TFSA) or a tax-deferred (RESP, RRSP, RRIF, etc.) investment accounts..
+                </p>
+                <p data-tts>
+                    Our portfolios are designed and constructed with a focus on owning individual investments.
+                </p>
+                <p data-tts>
+                    Similar legislation is being considered in New York, Illinois, Minnesota,
+                    and bills have been introduced in both houses of Congress.
+                </p>
+                <p data-tts>
+                    In July, Samsung officials told Gascon's office that the major carriers were resisting using kill switches.
+                </p>
+                <p data-tts>
+                    However, Gascon and Schneiderman said in a joint statement Friday that Samsung's latest move sends a strong message that
+                    the wireless industry can work together to make consumers safe.
+                </p>
+                <p data-tts>
+                    The prosecutors have given the manufacturers a June deadline to find solutions to curb smartphone theft.
+                </p>
+            </div>
+            <div class="box w-25 h-70">
+                <h3 data-tts>Risk Statistics Report</h3>
+                <p data-tts>
+                    "More work needs to be done to ensure that these solutions come standard on every device,
+                    but these companies have done the right thing by responding to our call for action," the prosecutors said.
+                </p>
+                <p data-tts>
+                    "No family should lose a mother, a father, a son or a daughter for their phone.
+                </p>
+                <p data-tts>
+                    Manufacturers and carriers need to put public safety before corporate profits and stop this violent epidemic,
+                    which has put millions of smartphone users at risk."
+                </p>
+            </div>
+            <div class="box w-50 h-30 box-b-r title-top">
+                <h3 data-tts>Mutual Fund Ratings, Research, Best Mutual Funds</h3>
+                <p data-tts>
+                    Apple created a similar "activation lock" feature for the popular iPhone last year.
+                </p>
+                <p data-tts>
+                    Almost one in three U.S. robberies involve phone theft, according to the Federal Communications Commission.
+                </p>
+                <p data-tts>
+                    Lost and stolen mobile devices — mostly smartphones — cost consumers more than $30 billion in 2012,
+                    the agency said in a study.
+                </p>
+            </div>
+            <div class="box w-50 h-30 title-top">
+                <h3 data-tts>Investment Reports - Private Equity IRR Reports</h3>
+                <p data-tts>
+                    CTIA-The Wireless Association, a trade group for wireless providers, has said a permanent kill switch has serious risks,
+                </p>
+                <p data-tts>
+                    including potential vulnerability to hackers who could disable mobile devices and lock out not only individuals'
+                    phones but also phones used by entities such as
+                </p>
+                <p data-tts>
+                    the Department of Defense, Homeland Security and law enforcement.
+                    The association created a national stolen phone database last year to remove any market for stolen smartphones.
+                </p>
+            </div>
+        </div>
+
+        <div id="page2" class="f-page">
+            <div class="f-title">
+                <a href="#"></a>
+                <h2>Do-it-yourself Investment Portfolios: Overview</h2>
+                <a href="#"></a>
+            </div>
+            <div class="box w-70 h-50 box-b-r title-top box-img-left">
+                <h3 data-tts>Exclusive: IEX eyes stock exchange status, Part 1<span>Published April 5, 2014</span></h3>
+                <div class="img-cont"><img src="/Images/finacial.jpg" /></div>
+                <p data-tts>
+                    NEW YORK (Reuters) - The upstart stock trading venue featured in Michael Lewis' book "Flash Boys:
+                    A Wall Street Revolt," may apply to become a fully registered stock exchange sooner than planned,
+                    IEX Group Inc's chief executive said on Friday.
+                </p>
+                <p data-tts>
+                    We also support our DIY Portfolios with a number of useful reports and summaries..
+                </p>
+                <p data-tts>
+                    Dark pools are more lightly regulated than public stock exchanges, allowing them to pick who gets to trade inside of them.
+                    Investors remain anonymous, stock orders are not displayed, and the rules can be kept secret.
+                </p>
+                <p data-tts>
+                    IEX does not quite fit that mould. It offers all brokers access, its subscribers are listed on its
+                    website, and out of 45 active ATSs, it is the only one to make its rules public.
+                </p>
+                <p data-tts>
+                    The company has said it planned to become an exchange once it hits 5 percent of U.S. stock volume,
+                    which would make it more financially viable to take on the costs of the additional regulatory burden of being an exchange.
+                </p>
+            </div>
+            <div class="box w-30 h-50">
+                <h3 data-tts>Exclusive: IEX eyes stock exchange status, Part 2<span>Published April 5, 2014</span></h3>
+                <p data-tts>
+                    Since the release of Lewis' book, IEX's trade volume has doubled to as much as 24 million shares a day,
+                    or around half-a-percent of U.S. stock volume.
+                </p>
+                <p data-tts>
+                    That might seem like a drop in the bucket,
+                    but it makes it bigger, on any given day, than four of the 13 public U.S. stock exchanges.
+                </p>
+                <p data-tts>
+                    If it were to become a stock exchange, IEX could challenge the New York Stock Exchange
+                    and Nasdaq OMX Group for corporate listings.
+                </p>
+                <p data-tts>
+                    The last exchange to attempt to do that was
+                    BATS Global Markets in May 2012, but it experienced a software problem during its market debut
+                    on its own exchange and pulled the IPO.
+                </p>
+                <p data-tts>
+                    It currently only lists exchange traded products.
+                </p>
+            </div>
+            <div class="box w-30 h-50 box-b-r title-top">
+                <h3 data-tts>Exclusive: IEX eyes stock exchange status, Part 3<span>Published April 5, 2014</span></h3>
+                <p data-tts>
+                    ICE Chief Executive Officer Jeff Sprecher, has been a vocal critic of the overall stock market,
+                    saying it is too complicated and rife with conflicts of interest.
+                </p>
+                <p data-tts>
+                    Katsuyama would not comment on whether ICE had tried to buy his company. But he did say:
+                </p>
+                <p data-tts>
+                    "We're very aligned in philosophy and I have only good things to say about Jeff."
+                </p>
+                <p data-tts>
+                    Around 2006-2007 when high-frequency trading began to flourish, Katsuyama found himself
+                    suddenly unable to place a large order for the stock price he saw quoted on his screen.
+                </p>
+                <p data-tts>
+                    This prompted him and his team to take a critical look at the structure of the market.
+                    What followed led to the opening in November of IEX, which stands for Investors' Exchange.
+                </p>
+            </div>
+            <div class="box w-70 h-50 title-top box-img-left">
+                <h3 data-tts>Exclusive: IEX eyes stock exchange status, Part 4<span>Published April 5, 2014</span></h3>
+                <div class="img-cont"><img src="/Images/finacial2.gif" /></div>
+                <p data-tts>
+                    IEX developed an electronic speed bump to take away any advantages of high-speed traders.
+                </p>
+                <p data-tts>
+                    It does not pay rebates to entice order flow. It has only four order types versus hundreds at some exchanges,
+                    and it is owned by fund companies and individual investors, not by banks or brokers.
+                </p>
+                <p data-tts>
+                    "You can build a fair market where computers, floor traders, retail and institutional, they can all be a part
+                    of the same trading eco-system,"
+                </p>
+                <p data-tts>
+                    Katsuyama said. "You want the market to be random and you want people's
+                    investing or trading abilities to determine who wins and loses, not some loophole or inefficiency in the market structure."
+                </p>
+            </div>
+        </div>
+
+        <div id="page3" class="f-page">
+            <div class="f-title">
+                <a href="#"></a>
+                <h2>LPL FinanciaL HoLdings Inc. 2012 annuaL Report</h2>
+                <a href="#"></a>
+            </div>
+            <div class="box w-30 h-60 box-b-r title-top">
+                <h3 data-tts>Message from the Chairman and CEO</h3>
+                <p data-tts>
+                    LPL Financial was founded by entrepreneurs on the belief that objective financial guidance is a fundamental
+                    need for everyone.
+                </p>
+                <p data-tts>
+                    Our mission is and has been to enable our advisors to focus on what they do best—
+                    create the personal, long-term client relationships that are the foundation for turning life’s aspirations into
+                    financial realities.
+                </p>
+                <p data-tts>
+                    We know that what we do matters, and that is why every LPL Financial employee shares
+                    a commitment to serving our independent advisors and financial institutions ethically and exceedingly well.
+                </p>
+                <p data-tts>
+                    It has been that way since the beginning of our firm.
+                </p>
+            </div>
+            <div class="box w-70 h-60 box-img-left title-top">
+                <h3 data-tts>General Corporate Overview</h3>
+                <div class="img-cont"><img src="/Images/finacial3.jpg" /></div>
+                <p data-tts>
+                    The trading methods and technology that make HFT possible are all legal, and the stock exchanges
+                    HFT firms trade on are highly regulated.
+                </p>
+                <p data-tts>
+                    But Lewis said these firms are using their speed advantage
+                    to profit at the expense of other market participants to the tune of tens of billions of dollars.
+                </p>
+                <p data-tts>
+                    "They are able to identify your desire to buy shares in Microsoft and buy them in front of you and
+                    sell them back to you at a higher price," Lewis said on the television program
+                    "60 Minutes" on Sunday.
+                </p>
+                <p data-tts>
+                    "This speed advantage that the faster traders have is milliseconds, some of it is fractions of milliseconds,"
+                    said Lewis, whose books include "The Big Short" and "Moneyball."
+                </p>
+                <p data-tts>
+                    Those milliseconds can be valuable, making it possible to send around 10,000 orders in the blink of an eye.
+                </p>
+                <p data-tts>
+                    Darting in and out of trades, HFT firms make just fractions of a penny per trade, but the sheer speed and
+                    volume of their trading activity allows those that are successful to make significant profits.
+                </p>
+                <p data-tts>
+                    Proponents of HFT argue that the presence of such firms makes it easier for all market participants to find
+                    buyers and sellers for their trades leads to smaller bid-ask spreads.
+                </p>
+                <p data-tts>
+                    But Brad Katsuyama, former head trader in New York,
+                    said he was finding that when he would send a large stock order to the market.
+                </p>
+            </div>
+            <div class="box w-40 h-40 box-img-left box-b-r title-top">
+                <h3 data-tts>LPL Financial - wiki</h3>
+                <div class="img-cont"><img src="/Images/finacialpie.jpg" /></div>
+                <p data-tts>
+                    LPL Financial is the largest organization of independent financial advisors in the United States.
+                </p>
+                <p data-tts>
+                    LPL Financial was formed in 1989 through the merger of Linsco
+                    and Private Ledger and has since expanded its number of independent
+                    financial advisors from a few hundred to more than 13,300 in 2012. 
+                </p>
+                <p data-tts>
+                    LPL Financial has main office locations in Boston, Charlotte, and San Diego.
+                </p>
+                <p data-tts>
+                    LPL Financial advisors help clients meet investment goals with a number of financial services,
+                    including equities, bonds, mutual funds, annuities, insurance, and fee-based programs.
+                </p>
+            </div>
+            <div class="box w-30 h-40 box-b-r title-top">
+                <h3 data-tts>LPL Financial Holdings Inc.- Quarterly Results</h3>
+                <p data-tts>
+                    Katsuyama said he decided to start a new trading platform, called IEX, for the Investors'
+                    Exchange, employing similar tactics to those he used at RBC.
+                </p>
+                <p data-tts>
+                    "It almost felt like a sense of obligation to say we found a problem that is affecting millions
+                    and millions of people - people are blindly losing money they didn't even know they were entitled to.
+                </p>
+                <p data-tts>
+                    It's a hole in the bottom of the bucket," he said.
+                </p>
+                <p data-tts>
+                    IEX has attracted the investment of David Einhorn, the billionaire owner of hedge fund Greenlight
+                    Capital, and an endorsement from Goldman Sachs.
+                </p>
+                <p data-tts>
+                    The investors in IEX are fund companies and individuals, not banks.
+                </p>
+                <p data-tts>
+                    "We are selling trust, we are selling transparency, and to think that trust is actually a differentiator
+                    in a service business, is actually a crazy thought, right?" said Katsuyama.
+                </p>
+                <p data-tts>
+                    Earlier this month, New York state's Attorney General Eric Schneiderman said he believes U.S. stock exchanges
+                    and other platforms provide HFT firms with unfair advantages.
+                </p>
+            </div>
+            <div class="box w-30 h-40 title-top">
+                <h3 data-tts>Acme Advisor Relationships</h3>
+                <p data-tts>
+                    Exchanges allow trading firms to place computer servers inside the exchange's data centers so that the firms can
+                    see the data as soon as possible.
+                </p>
+                <p data-tts>
+                    The practice, called co-location, is regulated and available to anyone who wants
+                    to pay for it.
+                </p>
+                <p data-tts>
+                    Schneiderman has begun meeting with the U.S. exchanges, which include IntercontinentalExchange Group's New
+                    York Stock Exchange, Nasdaq OMX Group's main bourse, and four platforms run by BATS Global Markets.
+                </p>
+                <p data-tts>
+                    A ban on HFT is unlikely, as U.S. regulators would be loath to put policies in place that could lead to a less liquid
+                    market, Robert Greifeld, chief executive officer of Nasdaq, said on Thursday.
+                </p>
+            </div>
+        </div>
+
+        <div class="f-page f-cover-back">
+            <div id="codrops-ad-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var $container = $('#flip'),
+            $pages = $container.children().hide();
+
+        Modernizr.load({
+            test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+            yep: ['/scripts/flippage/jquery.tmpl.min.js', '/scripts/flippage/jquery.history.js', '/scripts/flippage/core.string.js', '/scripts/flippage/jquery.touchSwipe-1.2.5.js', '/scripts/flippage/jquery.flips.js'],
+            nope: '/content/flippage/fallback.css',
+            callback: function (url, result, key) {
+
+                if (url === '/content/flippage/fallback.css') {
+                    $pages.show();
+                }
+                else if (url === '/scripts/flippage/jquery.flips.js') {
+                    $container.flips();
+                }
+
+            }
+        });
+
+    </script>
+</body>
+</html>
